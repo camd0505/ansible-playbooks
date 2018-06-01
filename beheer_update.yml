@@ -10,8 +10,4 @@
   - name: Display kernel version
     command: uname -r
     changed_when: false
-    register: my_kernel_version
-    
-  - debug:
-      var: my_kernel_version
-        
+       
