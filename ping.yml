@@ -1,5 +1,5 @@
 ---
-- hosts: toa,beheer
+- hosts: test
 
   tasks:
     - action: ping
