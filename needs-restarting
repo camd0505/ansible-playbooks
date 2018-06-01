@@ -1,0 +1,8 @@
+# hosts: toa,prod,beheer,dmz
+- hosts: toa
+  become: yes
+  become_method: sudo
+  tasks:
+
+  - name: Server needs a reboot?
+    command: /bin/needs-restarting -r
