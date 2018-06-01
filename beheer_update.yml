@@ -1,10 +1,12 @@
 ---
 - hosts: beheer
   become: true
+  gather_facts: no
   tasks:
   - name: upgrade via yum
     yum:
       name: "*"
       state: latest
-  - name: Server needs a reboot?
-    command: /bin/needs-restarting -r
+  - name: Display kernel version
+    command: uname -r
+    changed_when: false
