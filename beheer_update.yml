@@ -13,5 +13,5 @@
     register: my_kernel_version
     
   - debug:
-    var: my_kernel_version
+      var: my_kernel_version
     
