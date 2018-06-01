@@ -1,0 +1,10 @@
+---
+- hosts: dmz-rhel7
+  become: yes
+
+  vars_files:
+    - vars.yml
+
+  roles:
+    - ntp_change
+

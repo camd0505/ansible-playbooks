@@ -1,0 +1,9 @@
+# Playbook that stopped service with systemctl
+- hosts: toa,prod,vsu-mon-001,vsu-mon-002
+  become: true
+
+  tasks:
+  - name: start ds_agent
+    service:
+      name: ds_agent
+      state: started

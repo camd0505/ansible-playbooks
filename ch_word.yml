@@ -1,0 +1,21 @@
+---
+- hosts: toa,prod,beheer,dmz
+  become: yes
+  become_method: sudo
+  tasks:
+
+  - name: Ansible replace word 
+    replace:
+      path: /etc/yum.conf
+      regexp: 'ncpa\*'
+      replace: " "
+ 
+  - name: remove package
+    yum:
+      name: nagios-repo
+      state: absent
+
+  - name: update all
+    yum:
+      name: "*"
+      state: latest

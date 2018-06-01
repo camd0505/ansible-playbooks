@@ -1,0 +1,8 @@
+---
+- hosts: prod
+  become: true
+  tasks:
+  - name: upgrade via yum
+    yum:
+      name: "*"
+      state: latest

@@ -1,0 +1,7 @@
+---
+- hosts: toa
+  become: true
+  tasks:
+  - name: Kernel version
+    command: uname -r 
+    register: kernel

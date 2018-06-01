@@ -1,0 +1,10 @@
+---
+- hosts: toa
+  become: true
+  tasks:
+  - name: check for updates
+    command: "yum check-update"
+  #- name: upgrade via yum
+  #  yum:
+  #    name: "*"
+  #    state: latest

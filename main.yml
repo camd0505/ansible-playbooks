@@ -1,0 +1,16 @@
+---
+- hosts: dmz-template
+  become: yes
+
+  vars_files:
+    - vars.yml
+
+  roles:
+#    - lvm
+#    - issue
+#    - nagiosrepo
+#    - ncpa
+#    - openscap
+#    - apache
+#    - mariadb
+
