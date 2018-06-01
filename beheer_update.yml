@@ -14,5 +14,5 @@
     
   - debug:
       var: my_kernel_version
-      verbosity: 1
+      verbosity: 0
     
