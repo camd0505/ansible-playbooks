@@ -9,4 +9,4 @@
 
   - name: Move /etc/cron.weekly to Home
     command: mv /etc/cron.weekly ~
-    when: perform_OpenSCAP_analysis.bash
+    
