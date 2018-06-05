@@ -9,6 +9,6 @@
     register: openscap
   
   - name: Move file
-    command: mv /etc/cron.weekly/perform_OpenSCAP_analysis.bash /home/camd0505
+    command: mv /etc/cron.weekly/perform_OpenSCAP_analysis.bash /usr/local/src/
     when: openscap.stat.exists
           
