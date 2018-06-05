@@ -3,9 +3,6 @@
   become: true
   gather_facts: no
   tasks:
-  - name: stat perform_OpenSCAP_analysis.bash
-    stat: path=/etc/cron.weekly
-    register: /etc/cron.weekly_stat
   - name: Move /etc/cron.weekly to Home
     command: mv /etc/cron.weekly/perform_OpenSCAP_analysis.bash /home/root/
     changed_when: false
