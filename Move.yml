@@ -1,5 +1,5 @@
 ---
-- hosts: prod
+- hosts: dmz
   become: true
   gather_facts: no
   tasks:
