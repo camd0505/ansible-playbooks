@@ -1,6 +1,5 @@
 ---
-- name: check for updates
-  hosts: beheer
+- hosts: beheer
   become: true
   gather_facts: no
   
