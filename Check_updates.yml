@@ -1,0 +1,14 @@
+---
+- name: check for updates
+  hosts: beheer
+  become: true
+  gather_facts: no
+  
+  tasks:
+  - name: check for updates (yum)
+    yum: list=updates update_cache=true
+    register: yumoutput
+    when: ansible_distribution_major_version|int < 22
+
+    - debug: msg="{{ inventory_hostname}} {{ yumoutput.results|length }}"
+    when: yumoutput is defined and yumoutput.results|length > 0
