@@ -1,5 +1,5 @@
 ---
-- hosts: beheer
+- hosts: vsu-mon-001
   become: true
   gather_facts: no
   tasks:
@@ -7,7 +7,7 @@
     stat: path=/etc/cron.weekly
     register: stat perform_OpenSCAP_analysis.bash
     
-  - name: Move /etc/cron.weekly to Home
-    command: mv /etc/cron.weekly/perform_OpenSCAP_analysis.bash /tmp
+  - name: Move perform_OpenSCAP_analysis.bash to Home
+    command: mv /etc/cron.weekly/perform_OpenSCAP_analysis.bash /home/camd0505
     changed_when: false
     
