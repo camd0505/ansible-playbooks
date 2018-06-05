@@ -5,9 +5,9 @@
   tasks:
   - name: checking if the file exists
     stat: path=/etc/cron.weekly
-    register: perform_OpenSCAP_analysis.bash
+    register: openscap-script
   
   - name: Move file to Home
     command: mv /etc/cron.weekly/perform_OpenSCAP_analysis.bash /home/camd0505
-    when: perform_OpenSCAP_analysis.bash.stat.exists
+    when: openscap-script.bash.stat.exists
           
