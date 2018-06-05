@@ -8,5 +8,5 @@
     register: /etc/cron.weekly_stat
 
   - name: Move /etc/cron.weekly to Home
-    command: mv /etc/cron.weekly ~
+    command: mv /etc/cron.weekly /home/root/
     
