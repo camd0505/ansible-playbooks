@@ -10,3 +10,6 @@
   - name: Display kernel version
     command: uname -r
     changed_when: false
+  - name: Server needs a reboot?
+    command: /bin/needs-restarting -r
+    changed_when: false
