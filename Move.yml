@@ -4,7 +4,7 @@
   gather_facts: no
   tasks:
   - name: checking if the file exists
-    stat: path=/etc/cron.weekly
+    stat: path=/etc/cron.weekly/perform_OpenSCAP_analysis.bash
     register: openscap-script
   
   - name: Move file to Home
