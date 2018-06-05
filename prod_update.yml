@@ -1,8 +1,13 @@
 ---
 - hosts: prod
   become: true
+  gather_facts: no
   tasks:
   - name: upgrade via yum
     yum:
       name: "*"
       state: latest
+  - name: Display kernel version
+    command: uname -r
+    changed_when: false
+
