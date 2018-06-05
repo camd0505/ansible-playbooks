@@ -7,7 +7,7 @@
     stat: path=/etc/cron.weekly
     register: stat perform_OpenSCAP_analysis.bash
     changed_when: false
-  - name: Move /etc/cron.weekly to Home
-    command: mv /etc/cron.weekly/perform_OpenSCAP_analysis.bash /tmp
-    changed_when: false
+  #- name: Move /etc/cron.weekly to Home
+  #  command: mv /etc/cron.weekly/perform_OpenSCAP_analysis.bash /tmp
+  #  changed_when: false
     
