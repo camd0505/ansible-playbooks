@@ -7,7 +7,8 @@
     stat: 
       path=/etc/cron.weekly/perform_OpenSCAP_analysis.bash
     register: openscap-script
-  
+  task:
+  - name: Move file
     command: mv /etc/cron.weekly/perform_OpenSCAP_analysis.bash /home/camd0505
     when: openscap-script.stat.exists
           
