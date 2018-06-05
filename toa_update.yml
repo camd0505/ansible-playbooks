@@ -7,6 +7,6 @@
     yum:
       name: "*"
       state: latest
-      - name: Display kernel version
+  - name: Display kernel version
     command: uname -r
-changed_when: false
+    changed_when: false
