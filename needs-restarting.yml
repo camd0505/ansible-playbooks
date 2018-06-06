@@ -1,5 +1,4 @@
-# hosts: toa,prod,beheer,dmz
-- hosts: toa
+- hosts: toa,prod,beheer,dmz
   become: yes
   become_method: sudo
   gather_facts: no
