@@ -1,5 +1,5 @@
 ---
-- hosts: toa,beheer,dmz
+- hosts: toa,beheer,dmz,prod
 
   tasks:
     - action: ping
