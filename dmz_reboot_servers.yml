@@ -1,6 +1,7 @@
 # Rebooting Linux Servers
 ---
 - hosts: dmz
+  gather_facts: no
 
   tasks:
     - name: reboot host
