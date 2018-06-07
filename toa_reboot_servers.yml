@@ -1,6 +1,7 @@
 # Rebooting Linux Servers
 ---
 - hosts: toa
+  gather_facts: no
 
   tasks:
     - name: reboot host
