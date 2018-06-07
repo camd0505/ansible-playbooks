@@ -1,6 +1,7 @@
 # Rebooting Linux Servers
 ---
 - hosts: prod
+  gather_facts: no
 
   tasks:
     - name: reboot host
