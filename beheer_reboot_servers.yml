@@ -1,6 +1,7 @@
 # Rebooting Linux Servers
 ---
 - hosts: beheer
+  gather_facts: no
 
   tasks:
     - name: reboot host
