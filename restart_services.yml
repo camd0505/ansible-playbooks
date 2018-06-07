@@ -1,9 +1,9 @@
 # Playbook that stopped service with systemctl
-- hosts: toa,prod,vsu-mon-001,vsu-mon-002
+- hosts: tst-vsu-web-001
   become: true
 
   tasks:
-  - name: restart ds_agent
+  - name: restart Mariadb
     service:
-      name: ds_agent
+      name: mariadb
       state: restarted
