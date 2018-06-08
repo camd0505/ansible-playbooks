@@ -3,5 +3,5 @@
   gather_facts: no
   tasks:
   - name: Check hits fw rule port 631
-    shell: iptables -L -nv | grep -i "tcp dpt:22" | awk '{print $1}'
+    shell: iptables -L -nv | grep -i "tcp dpt:631" | awk '{print $1}'
     
