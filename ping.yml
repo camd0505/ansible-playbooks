@@ -1,5 +1,6 @@
 ---
-- hosts: toa,beheer,dmz,prod
+#- hosts: toa,beheer,dmz,prod
+- hosts: acc-vsu-apl-001
   become: true
   gather_facts: no
 
