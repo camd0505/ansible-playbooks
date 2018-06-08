@@ -1,7 +1,6 @@
 # Rebooting Linux Servers
 ---
-# hosts: prod
-- hosts: vsu-apl-001,vsu-web-002
+- hosts: nog in te vullen
   gather_facts: no
 
   tasks:
