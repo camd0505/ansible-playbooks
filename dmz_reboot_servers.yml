@@ -16,6 +16,6 @@
         host: '*'
         port: 22
         delay: 30
-        timeout: 120
+        timeout: 180
         state: started
       become: false
