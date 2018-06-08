@@ -4,9 +4,5 @@
   tasks:
   - name: Ansible grep pattern with ignore_errors example
     shell: iptables -L -nv | grep -i "udp dpt:631"
-    register: grep_output
-    ignore_errors: true
-
-  - debug:
-   # var: grep_output.stdout_lines
-     when: grep_output.stdout != "
+    #register: grep_output
+    #ignore_errors: true
