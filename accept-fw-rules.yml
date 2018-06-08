@@ -4,4 +4,4 @@
   tasks:
   - name: Check hits fw rule port 631
     shell: iptables -L -nv | grep -i "udp dpt:631"
-    
+    ignore_errors: true
