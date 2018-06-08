@@ -3,10 +3,10 @@
   gather_facts: no
   tasks:
   - name: Ansible grep pattern with ignore_errors example
-    shell: iptables -L -nv | grep -i accept
-    #egister: grep_output
-    #ignore_errors: true
+    shell: iptables -L -nv | grep -i "udp dpt:631"
+    register: grep_output
+    ignore_errors: true
 
-  #- debug:
+  - debug:
    # var: grep_output.stdout_lines
-    #when: grep_output.stdout != "
+     when: grep_output.stdout != "
