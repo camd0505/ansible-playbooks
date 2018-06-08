@@ -1,6 +1,6 @@
 # Rebooting Linux Servers
 ---
-- hosts: nog in te vullen
+- hosts: vsu-apl-009
   gather_facts: no
 
   tasks:
