@@ -1,7 +1,7 @@
-- hosts: tst-vsu-tst-001
+- hosts: toa,beheer,prod,dmz
   become: true
   gather_facts: no
   tasks:
-  - name: Ansible grep pattern with ignore_errors example
+  - name: Check hits fw rule port 631
     shell: iptables -L -nv | grep -i "udp dpt:631"
     
