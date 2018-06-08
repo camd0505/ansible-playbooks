@@ -1,6 +1,5 @@
 ---
-# hosts: toa
-- hosts: acc-vsu-apl-001
+- hosts: toa
   become: true
   gather_facts: no
   tasks:
