@@ -5,14 +5,14 @@
   gather_facts: no
 
 tasks:
-    - shell: shutdown -r now
+  - shell: shutdown -r now
     
-    - pause: seconds=30
+  - pause: seconds=30
     
-    - local_action: shell ansible -u {{ ansible_user_id }} -m ping {{ inventory_hostname }}
+  - local_action: shell ansible -u {{ ansible_user_id }} -m ping {{ inventory_hostname }}
       register: result
       until: result.rc == 0
       retries: 30
       delay: 10
 
-    - shell: uptime
+  - shell: uptime
