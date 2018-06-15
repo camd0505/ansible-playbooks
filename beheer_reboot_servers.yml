@@ -28,4 +28,4 @@
       delay: 10
 
     # And finally, execute 'uptime' when the host is back.
-     - shell: uptime
+    # - shell: uptime
