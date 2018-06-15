@@ -1,6 +1,6 @@
 # Rebooting Production Linux Servers
 ---
-- hosts: prod
+- hosts: vsu-apl-002 vsu-apl-003
   gather_facts: true
   become: true
 
