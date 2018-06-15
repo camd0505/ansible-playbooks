@@ -6,4 +6,4 @@
   tasks:
   - name: Server needs a reboot?
     command: /bin/needs-restarting -r
-    #changed_when: false
+    changed_when: false
