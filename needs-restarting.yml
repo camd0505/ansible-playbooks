@@ -6,4 +6,4 @@
 
   - name: Server needs a reboot?
     command: /bin/needs-restarting -r
-    changed_when: true
+    changed_when: false
