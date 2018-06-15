@@ -1,11 +1,11 @@
-# Rebooting Linux Servers
+# Rebooting Beheer Linux Servers
 ---
 - hosts: beheer
   gather_facts: true
   become: true
 
   tasks:
-    - name: Restart server
+    - name: Restarting Beheer servers
       shell: sleep 10 && /sbin/shutdown -r now 
       async: 300
       poll: 0
