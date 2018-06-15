@@ -1,6 +1,6 @@
 # Rebooting Linux Servers
 ---
-- hosts: tst-vsu-tst-001
+- hosts: beheer
   #gather_facts: no
 
   tasks:
@@ -10,22 +10,12 @@
       poll: 0
       become: true
 
-    #- name: waiting for server booting up
-     # local_action: wait_for
-      #args:
-       # host: '*'
-        #port: 22
-        #delay: 30
-        #timeout: 180
-        #state: started
-      #become: false
-
-    #- name: waiting for server booting up
-    - local_action: shell ansible -u {{ ansible_user_id }} -m ping {{ inventory_hostname }}
-      register: result
-      until: result.rc == 0
-      retries: 30
-      delay: 10
-
-    # And finally, execute 'uptime' when the host is back.
-    # - shell: uptime
+    - name: waiting for server booting up
+      local_action: wait_for
+      args:
+        host: '*'
+        port: 22
+        delay: 30
+        timeout: 180
+        state: started
+      become: false
