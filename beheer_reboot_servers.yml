@@ -1,6 +1,6 @@
 # Rebooting Linux Servers
 ---
-- hosts: beheer
+- hosts: tst-vsu-tst-001
   gather_facts: no
 
   tasks:
