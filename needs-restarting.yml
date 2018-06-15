@@ -2,8 +2,8 @@
   become: yes
   become_method: sudo
   gather_facts: no
-    tasks:
 
+tasks:
   - name: Server needs a reboot?
     command: /bin/needs-restarting -r
     changed_when: false
