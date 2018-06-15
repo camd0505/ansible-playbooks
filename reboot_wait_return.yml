@@ -1,7 +1,7 @@
 ---
 - hosts: beheer
-  gather_facts: true
-  become: yes
+  gather_facts: false
+  become: true
 
   tasks:
     - name: Restart server
