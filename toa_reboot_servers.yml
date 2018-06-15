@@ -5,7 +5,7 @@
   become: true
 
   tasks:
-    - name: Restart server
+    - name: Restarting TOA servers
       shell: sleep 10 && /sbin/shutdown -r now 
       async: 300
       poll: 0
