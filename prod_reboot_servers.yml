@@ -1,6 +1,6 @@
 # Rebooting Production Linux Servers
 ---
-- hosts: dmz-vsu-atm-001,dmz-vsu-atm-002,dmz-vsu-apl-003,vsu-web-001,vsu-web-003
+- hosts: dmz-vsu-apl-001,dmz-vsu-atm-001,dmz-vsu-atm-002,dmz-vsu-apl-003,vsu-web-001,vsu-web-003
   gather_facts: true
   become: true
 
