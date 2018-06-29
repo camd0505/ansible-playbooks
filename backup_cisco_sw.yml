@@ -1,18 +1,19 @@
 ---
-- hosts: 172.16.199.5
+- hosts: CSR-01
   gather_facts: true
-  become: true
   connection: local
  
   tasks:
-   - name: show version
+   - name: show run 
      ios_command:
-       commands: show version
-       wait_for: result[0] contains IOS
-       #register: config
+     commands:
+     - show run 
+       host: "{{ ansible_host }}"
+       username: roger
+       password: KanKu009
+       register: config
  
-   - name: save output to /data/ansible/backup_switches
-     copy: 
-     content: "{{ config.stdout[0] }}"
-     dest: "/data/ansible/backup_switches/show_run_{{ inventory_hostname }}.txt"
-        
+  - name: save output to /data/ansible/backup_switches 
+    copy: 
+    content: "{{ config.stdout[0] }}"
+    dest: "/data/ansible/backup_switches"/show_run_{{ inventory_hostname }}.txt"
