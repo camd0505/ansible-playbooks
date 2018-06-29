@@ -13,7 +13,7 @@
       #password: 
       #register: config
  
-  - name: save output to /data/ansible/backup_switches 
-    copy: 
-    content: "{{ config.stdout[0] }}"
-    dest: "/data/ansible/backup_switches"/show_run_{{ inventory_hostname }}.txt"
+   - name: save output to /data/ansible/backup_switches 
+     copy: 
+     content: "{{ config.stdout[0] }}"
+     dest: "/data/ansible/backup_switches"/show_run_{{ inventory_hostname }}.txt"
