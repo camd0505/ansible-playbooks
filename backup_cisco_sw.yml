@@ -1,6 +1,7 @@
 ---
 - hosts: 172.16.199.5
   gather_facts: true
+  become: true
   #connection: local
  
   tasks:
