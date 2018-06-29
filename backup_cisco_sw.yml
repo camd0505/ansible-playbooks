@@ -9,8 +9,6 @@
      ios_command:
        commands: show version
        wait_for: result[0] contains IOS
-       username: camd0505
-       password: n@omi00c
        #register: config
  
    - name: save output to /data/ansible/backup_switches
