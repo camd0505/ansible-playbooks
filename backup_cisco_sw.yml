@@ -11,7 +11,7 @@
       #host: {{ ansible_host }}
       #username: 
       #password: 
-      register: config
+      #register: config
  
   - name: save output to /data/ansible/backup_switches 
     copy: 
