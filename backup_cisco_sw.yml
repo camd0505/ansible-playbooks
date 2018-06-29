@@ -9,7 +9,7 @@
      ios_command:
        commands: show run
        wait_for: result[0] contains IOS
-       register: config
+       #register: config
  
    - name: save output to /data/ansible/backup_switches
      copy: 
