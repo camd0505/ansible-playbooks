@@ -1,10 +1,10 @@
 # Playbook that stopped service with systemctl
-- hosts: tst-vsu-web-001
+- hosts: tst-vsu-mdb-001,tst-vsu-apl-004,ont-vsu-web-002,ont-vsu-mdb-001,acc-vsu-web-001,acc-vsu-mdb-001
   become: true
   gather_facts: no
 
   tasks:
-  - name: restart Mariadb
+  - name: restart Trend Agent
     service:
-      name: mariadb
+      name: ds_agent
       state: restarted
