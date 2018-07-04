@@ -10,7 +10,7 @@
          - show run   
      register: config
 
-   - name: save output to /etc/ansible/backup
+   #- name: save output to /etc/ansible/backup
    - local_action: "copy content='{{ config.stdout }}' dest=/etc/ansible/backup/config.txt"
      #copy: 
        #content: "{{ config.stdout[0] }}"
