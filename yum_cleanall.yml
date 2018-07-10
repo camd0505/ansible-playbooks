@@ -1,5 +1,6 @@
 ---
 - hosts: toa
+  gather_facts: true
   become: true
   tasks:
   - name: yum clean all 
