@@ -1,6 +1,6 @@
 ---
 - hosts: toa,beheer,prod,dmz
-  gather_facts: true
+  gather_facts: no
   become: true
   tasks:
   - name: yum clean all 
