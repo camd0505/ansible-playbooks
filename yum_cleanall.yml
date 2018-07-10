@@ -1,5 +1,5 @@
 ---
-- hosts: toa
+- hosts: toa,beheer,prod,dmz
   gather_facts: true
   become: true
   tasks:
