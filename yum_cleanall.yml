@@ -5,6 +5,4 @@
   tasks:
   - name: yum clean all 
     command: "yum clean all"
-    args:
-    warn: no
-    #changed_when: False
+    changed_when: False
