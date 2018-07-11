@@ -1,0 +1,9 @@
+---
+#- hosts: toa,beheer,prod,dmz
+- hosts: beheer
+  gather_facts: no
+  become: true
+  tasks:
+  - name: yum check updates 
+    command: "yum check-update"
+    changed_when: False
