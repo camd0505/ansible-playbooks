@@ -1,6 +1,5 @@
 ---
-#- hosts: toa,beheer,prod,dmz
-- hosts: beheer
+- hosts: toa,beheer,prod,dmz
   gather_facts: no
   become: true
   tasks:
