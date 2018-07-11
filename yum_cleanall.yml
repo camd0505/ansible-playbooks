@@ -5,6 +5,4 @@
   tasks:
   - name: yum clean all 
     command: "yum clean all"
-    register: yum_clear
-    changed_when: '"\n0 metadata files removed" not in yum_clear.stdout'
-    #changed_when: False
+    changed_when: False
