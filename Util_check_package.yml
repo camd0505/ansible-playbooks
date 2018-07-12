@@ -4,10 +4,10 @@
   become: true
   tasks:
   
-- name: ensure a list of packages installed
-  yum:
-    name: "{{ packages }}"
-  vars:
-    packages:
-    - httpd
-    - mariadb
+  - name: ensure a list of packages installed
+    yum:
+      name: "{{ packages }}"
+    vars:
+      packages:
+      - httpd
+      - mariadb
