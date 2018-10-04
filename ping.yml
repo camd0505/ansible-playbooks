@@ -1,5 +1,5 @@
 ---
-- hosts: prod,dmz
+- hosts: toa
   become: true
   gather_facts: no
 
