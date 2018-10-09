@@ -1,5 +1,5 @@
 ---
-- hosts: beheer
+- hosts: beheer,toa,prod,dmz
   become: true
   gather_facts: no
 
