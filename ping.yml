@@ -1,5 +1,5 @@
 ---
-- hosts: beheer
+- hosts: toa
   become: true
   gather_facts: no
 
