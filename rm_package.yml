@@ -1,5 +1,5 @@
 ---
-- hosts: tst-vsu-web-002
+- hosts: toa,beheer,dmz,prod
   become: true
   gather_facts: no
   tasks:
