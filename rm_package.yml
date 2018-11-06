@@ -1,0 +1,9 @@
+---
+- hosts: tst-vsu-web-002
+  become: true
+  gather_facts: no
+  tasks:
+  - name: remove OpenScap packages
+    yum:
+      name: openscap*
+      state: absent  
