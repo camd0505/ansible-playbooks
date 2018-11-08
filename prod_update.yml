@@ -1,5 +1,5 @@
 ---
-- hosts: prod
+- hosts: vsu-web-003
   become: true
   gather_facts: no
   tasks:
