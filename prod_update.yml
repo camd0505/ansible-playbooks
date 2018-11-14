@@ -1,5 +1,5 @@
 ---
-- hosts: vsu-web-003
+- hosts: vsu-web-001,vsu-apl-009,vsu-apl-002,vsu-apl-003
   become: true
   gather_facts: no
   tasks:
