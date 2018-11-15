@@ -1,6 +1,6 @@
 # Rebooting Production Linux Servers
 ---
-- hosts: vsu-mdb-001,vsu-web-001,vsu-apl-009,vsu-apl-002,vsu-apl-003,dmz-vsu-apl-001,dmz-vsu-apl-002,dmz-vsu-apl-003,dmz-vsu-apl-005
+- hosts: prod
   gather_facts: true
   become: true
 
