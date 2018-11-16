@@ -1,5 +1,5 @@
 ---
-- hosts: prod,dmz
+- hosts: prod
   become: true
   gather_facts: no
 
