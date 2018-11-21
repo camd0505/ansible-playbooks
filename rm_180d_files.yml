@@ -3,13 +3,13 @@
   become: true
   gather_facts: no
   tasks:
-- name: find files older than 180 days
-  find:
-    path: '{{ /data/HOSTS }}'
-    age: 179d
-    recurse: yes
-    file_type: file
-  register: oldfiles
+  - name: find files older than 180 days
+    find:
+      path: '{{ /data/HOSTS }}'
+      age: 179d
+      recurse: yes
+      file_type: file
+    register: oldfiles
 #- name: Remove files
   #file:
     #path: '{{ /data/HOSTS }}'
