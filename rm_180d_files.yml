@@ -5,14 +5,14 @@
   tasks:
   - name: find files older than 180 days
     find:
-      path: /data/HOSTS
-      age: 1000d
+      path: /tmp
+      age: 500d
       recurse: yes
       file_type: file
     register: oldfiles
-#- name: Remove files
-  #file:
-    #path: '{{ /data/HOSTS }}'
-    #state: absent
-  #with_items:
-    #- '{{ oldfiles.files }}'
+  - name: Remove files
+    file:
+      path: '{{ /data/HOSTS }}'
+      state: absent
+    with_items:
+      - '{{ oldfiles.files }}'
