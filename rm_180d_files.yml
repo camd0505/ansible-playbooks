@@ -5,7 +5,6 @@
     recurse: yes
     file_type: file
   register: oldfiles
-
 - name: Remove files
   file:
     path: '{{ /data/HOSTS }}'
