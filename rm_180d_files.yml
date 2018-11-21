@@ -12,7 +12,6 @@
     register: oldfiles
   - name: Remove files
     file:
-      path: /tmp
+      path: "{{ item.path }}"
       state: absent
-    with_items:
-      - '{{ oldfiles.files }}'
+    with_items: "{{ oldfiles.files }}"
