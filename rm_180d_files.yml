@@ -1,12 +1,12 @@
 ---
-- hosts: vsu-log-001
+- hosts: tst-vsu-tst-001
   become: true
   gather_facts: no
   tasks:
   - name: find files older than 180 days
     find:
       path: /data/HOSTS
-      age: 179d
+      age: 1000d
       recurse: yes
       file_type: file
     register: oldfiles
