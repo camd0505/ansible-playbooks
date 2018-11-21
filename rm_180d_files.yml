@@ -1,7 +1,7 @@
 - name: find files older than 180 days
   find:
     path: '{{ /data/HOSTS }}'
-    age:"179d"
+    age: 179d
     recurse: yes
     file_type: file
   register: oldfiles
