@@ -10,9 +10,9 @@
     recurse: yes
     file_type: file
   register: oldfiles
-- name: Remove files
-  file:
-    path: '{{ /data/HOSTS }}'
-    state: absent
-  with_items:
-    - '{{ oldfiles.files }}'
+#- name: Remove files
+  #file:
+    #path: '{{ /data/HOSTS }}'
+    #state: absent
+  #with_items:
+    #- '{{ oldfiles.files }}'
