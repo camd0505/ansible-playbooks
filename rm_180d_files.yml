@@ -1,5 +1,5 @@
 ---
-- hosts: toa,beheer,dmz,prod
+- hosts: vsu-log-001
   become: true
   gather_facts: no
   tasks:
