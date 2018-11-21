@@ -1,3 +1,8 @@
+---
+- hosts: toa,beheer,dmz,prod
+  become: true
+  gather_facts: no
+  tasks:
 - name: find files older than 180 days
   find:
     path: '{{ /data/HOSTS }}'
