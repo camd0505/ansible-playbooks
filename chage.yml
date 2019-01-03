@@ -1,0 +1,7 @@
+---
+- hosts: toa,beheer,prod,dmz
+  become: true
+  gather_facts: no
+  tasks:
+  - name: Change age user
+    command: chage -E -1 -M -1 deij0908
